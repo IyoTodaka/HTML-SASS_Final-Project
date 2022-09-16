@@ -1,0 +1,24 @@
+{
+  "name": "html-sass_final-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass sass:css -w",
+    "dev": "serve ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IyoTodaka/HTML-SASS_Final-Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IyoTodaka/HTML-SASS_Final-Project/issues"
+  },
+  "homepage": "https://github.com/IyoTodaka/HTML-SASS_Final-Project#readme",
+  "dependencies": {
+    "sass": "^1.54.9"
+  }
+}
