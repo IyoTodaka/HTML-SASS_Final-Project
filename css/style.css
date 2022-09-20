@@ -1,22 +1,7 @@
-.brand {
-  background-color: #ce351a;
-  display: flex;
-  position: relative;
-  text-decoration: none;
-}
-
-.brand .sub-name {
-  font-size: x-large;
-  position: absolute;
-  bottom: 0;
-  left: 18%;
-  font-family: initial;
-  margin-bottom: 0%;
-}
-
+@charset "UTF-8";
 /*# sourceMappingURL=main.css.map */
 body {
-  background-image: url(../images/back3.jpeg);
+  background-image: url(../images/back4.jpeg);
   background-size: 100% auto;
 }
 
@@ -28,12 +13,9 @@ header {
 header h1 {
   margin: 0;
 }
-header.header {
-  margin: 0;
-}
 
 .brand {
-  background-color: #ce351a;
+  background-color: hsl(9deg, 78%, 45%);
   display: flex;
   display: block;
   justify-content: center;
@@ -42,7 +24,6 @@ header.header {
 
 .card {
   position: relative;
-  width: 100vw;
   --bs-card-border-width: 0px;
   align-items: center;
 }
@@ -50,54 +31,318 @@ header.header {
 .img {
   display: flex;
   position: absolute;
-  object-fit: cover;
   opacity: 0;
   animation: change-img-anim 25s infinite;
 }
 
-@media screen and (min-width: 1025px) {
+.airsoft {
+  width: 100%;
+  text-align: center;
+  background-color: rgba(3, 3, 3, 0.6);
+  display: flex;
+}
+.airsoft h3 {
+  color: rgb(241, 101, 31);
+  margin: 2%;
+}
+.airsoft p {
+  color: aquamarine;
+}
+
+.access {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 40.25%;
+  position: relative;
+  background-color: rgba(3, 3, 3, 0.6);
+}
+.access iframe {
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  height: 100%;
+  width: 40%;
+}
+.access .address {
+  color: rgb(241, 101, 31);
+  width: 40%;
+}
+
+.special {
+  text-align: center;
+  background-color: rgba(54, 57, 48, 0.7);
+  padding: 2%;
+  color: rgb(241, 101, 31);
+  margin: 4% 4% 0% 4%;
+  border-radius: 8px;
+}
+
+.plan {
+  margin: 2%;
+}
+
+.card_plan ul .plan_img, .card_plan ul li {
+  border-radius: 8px;
+  transition: all 0.5s;
+}
+.card_plan ul p {
+  margin: 0;
+}
+
+.img1:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.img2:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.img3:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.img4:hover {
+  transform: scale(1.1, 1.1);
+}
+
+@media screen and (max-width: 767px) {
   .img {
-    height: 600px;
-    max-width: 80%;
-    align-items: center;
+    width: 100%;
+    height: 300px;
+    margin: 0;
+  }
+  .plan {
+    margin-top: 20px;
+  }
+  .card {
+    margin: 0;
   }
   body {
     background-size: 150% auto;
   }
-  header {
-    margin: auto;
+  .airsoft {
+    margin: 3% 0% 10% 0%;
   }
-  .card {
+  .airsoft p {
+    font-size: medium;
+    margin: 3%;
+  }
+  .airsoft .airsoft_img {
+    width: 40%;
+  }
+  .intoro {
+    margin-top: 320px;
+  }
+  .card_plan h2 {
+    text-align: center;
+    color: #bafb2f;
+    font-size: larger;
+  }
+  .card_plan P {
+    padding: 0% 2% 0% 5%;
+    color: rgb(241, 101, 31);
+    font-size: medium;
+  }
+  .card_plan ul {
+    width: 80%;
+    margin: 0 10vw 0 10vw;
+    justify-content: baseline;
+    padding: 0%;
     align-items: center;
+    text-align: center;
+  }
+  .card_plan ul li {
+    border: 3px solid #161616;
+    width: 100%;
+    height: 100%;
+    display: block;
+    list-style: none;
+  }
+  .card_plan ul .plan_img {
+    width: 100%;
+    height: auto;
+  }
+  .contact {
+    border-radius: 8px;
+    width: 100%;
+    margin: 0;
+    padding: 3%;
+    background-color: rgba(3, 3, 3, 0.6);
+  }
+  .contact .email, .contact .comment {
+    width: 60%;
+  }
+  .contact p {
+    color: rgb(241, 101, 31);
+    width: 100%;
+  }
+  .flame-item {
+    text-align: center;
+    width: 100%;
+    background-color: rgba(3, 3, 3, 0.6);
+    padding: 3%;
+    border-radius: 8px;
+  }
+  .flame-item iframe {
+    width: 300px;
+  }
+  .footer img {
+    width: 20px;
+    margin: 2%;
+  }
+  .footer p {
+    font-size: small;
   }
 }
 @media screen and (min-width: 768px) {
   .img {
+    padding: 0;
     margin: 0;
     height: 400px;
-    width: 100vw;
+    width: 100%;
     align-items: flex-start;
   }
+  .plan {
+    margin-top: 40px;
+  }
   body {
-    background-size: 150% auto;
+    background-size: 20% auto;
   }
   .card {
     margin: 0;
   }
-}
-@media screen and (max-width: 767px) {
-  .img {
-    width: 100vw;
+  .airsoft {
+    margin: 3% 0% 10% 0%;
+  }
+  .airsoft p {
+    font-size: larger;
+    margin: 3%;
+  }
+  .airsoft .airsoft_img {
+    width: 35%;
+  }
+  .intoro {
+    margin-top: 440px;
+  }
+  .card_plan .plan_img {
+    width: 100%;
     height: 300px;
+  }
+  .card_plan h2 {
+    text-align: center;
+    color: #bafb2f;
+    font-size: medium;
+    font-size: x-large;
+  }
+  .card_plan P {
+    padding: 0% 2% 0% 4%;
+    font: bold;
+    font-size: x-large;
+    color: rgb(241, 101, 31);
+  }
+  .card_plan ul {
+    width: 90%;
+    margin: 0 5% 0 5%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0%;
+  }
+  .card_plan ul li {
+    border: 1px solid #161616;
+    width: 48%;
+    height: 100%;
+    display: inline-block;
+    list-style: none;
+  }
+  .contact {
+    border-radius: 8px;
+    width: 100%;
     margin: 0;
+    padding: 3%;
+    background-color: rgba(3, 3, 3, 0.6);
+  }
+  .contact .email, .contact .comment {
+    width: 40%;
+  }
+  .contact p {
+    color: rgb(241, 101, 31);
+    width: 100%;
+  }
+  .flame-item {
+    text-align: center;
+    width: 100%;
+    background-color: rgba(3, 3, 3, 0.6);
+    padding: 3%;
+    border-radius: 8px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .img {
+    height: 490px;
+    width: 70%;
+    align-items: flex-start;
+  }
+  .plan {
+    margin-top: 30px;
+  }
+  body {
+    background-size: 25% auto;
   }
   .card {
     margin: 0;
   }
-  body {
-    background-size: 150% auto;
+  .intoro {
+    margin-top: 540px;
+  }
+  .inner_airsoft {
+    margin-top: 5%;
+  }
+  .inner_airsoft h3 {
+    font-size: xx-large;
+  }
+  .inner_airsoft p {
+    font-size: xx-large;
+  }
+  .inner_airsoft .airsoft_img {
+    width: 25%;
+  }
+  .card_plan .plan_img {
+    width: 100%;
+    height: 300px;
+  }
+  .card_plan h2 {
+    text-align: center;
+    color: #bafb2f;
+    font-size: medium;
+    font-size: x-large;
+  }
+  .card_plan P {
+    padding: 0% 2% 0% 4%;
+    font: bold;
+    font-size: x-large;
+    color: rgb(241, 101, 31);
+  }
+  .card_plan ul {
+    width: 90%;
+    margin: 0 5% 0 5%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0%;
+  }
+  .card_plan ul li {
+    border: 1px solid #161616;
+    width: 40%;
+    height: 100%;
+    display: inline-block;
+    list-style: none;
   }
 }
+.card_plan ul li {
+  margin: 0;
+  background-color: rgba(242, 47, 47, 0.8);
+  background-color: rgba(54, 57, 48, 0.6);
+}
+
 .img:nth-of-type(1) {
   animation-delay: 0.5s;
 }
@@ -176,6 +421,32 @@ body::after {
   body::after {
     content: "XXL";
   }
+}
+.footer {
+  width: 100%;
+  background-color: #ce351a;
+  color: rgb(196, 10, 10);
+  text-align: center;
+  padding: 15px 0;
+  position: absolute;
+  bottom: 0;
+}
+.footer p {
+  color: rgb(244, 188, 47);
+  margin: 1% 1% 0% 1%;
+}
+
+footer img {
+  max-height: 5vh;
+  margin: 0 0 0 10vh;
+}
+
+.body-wrapper {
+  height: 100%;
+  min-height: 100vh;
+  position: relative; /*←相対位置*/
+  padding-bottom: 120px; /*←footerの高さ*/
+  box-sizing: border-box; /*←全て含めてmin-height:100vhに*/
 }
 
 /*# sourceMappingURL=style.css.map */
